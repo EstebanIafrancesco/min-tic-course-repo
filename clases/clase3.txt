@@ -1,0 +1,5 @@
+En el link: https://www.yworks.com/yed-live/
+Podemos construir diagramas de flujo
+
+Tambien podemos ver buena documentación en este sitio web
+https://docs.python.org/3/tutorial/inputoutput.html
