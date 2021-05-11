@@ -1,6 +1,21 @@
-def a(age):
-    print(age)
+def numeroEnteroPositivo(num):
+    # if num<0:
+    #     return False
+    # else:
+    #     if num > 63:
+    #         print('El valor debe ser menor que 63')
+    #     else:
+    #         if num%2 == 0:
+    #             print('El numero esta entre 0 y 63 y es positivo')
+    if num<0 or num>63:
+        mensaje = 'El valor no es valido'
+    else:
+        mensaje = 'El valor está melo pa analizar'
+    print(mensaje)
+       
+        
     
     
-a('hola soy ikiam...')
+numeroEnteroPositivo(56)
+
 

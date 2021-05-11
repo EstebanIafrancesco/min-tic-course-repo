@@ -15,20 +15,29 @@
 # identificado con {id}, cuya edad es: {age}, es {resp}" dónde, el valor total debe cumplir con
 # las especificaciones (que sea entero, en un rango entre 0 y 63).
 
-def  ansiedad(id  ,age  ,ans ):
-    if  ans>64 : # Filtro para nivel de ansiedad entre 0 y 63
-        print('\nParametro incorrecto,  ans debe estar entre 0 y 63')
-    elif age>110 : # Filtro de edad menor a 110 para evitar edades ilógicas
-        print('\nParametro incorrecto,  age debe estar entre 0 y 110')
-    else:
-        if 0 < ans < 8:
-            nivelAns = 'Minimo'
-        elif 7 < ans < 16:
-            nivelAns = 'Leve'
-        elif 16 < ans < 26:
-            nivelAns = 'Moderado'
-        elif 26 < ans < 64:
-            nivelAns = 'Alto'
-        print("\nEl nivel de ansiedad del paciente identificado con: ", id ,", cuya edad es ", age, ", es ", nivelAns, ".")
-
-ansiedad('hola', 65, 61)
+def ansiedad(id, age, ans):
+    
+    # if ans<0 or ans>64 : # Filtro para nivel de ansiedad entre 0 y 63
+    #     nivelAns = "El valor no es valido"
+    # elif age>110 : # Filtro de edad menor a 110 para evitar edades ilógicas
+    #     mensaje'Parametro incorrecto,  age debe estar entre 0 y 110'
+    # else:
+    if 0 < ans < 8:
+        nivelAns = 'Minima'
+    elif 7 < ans < 16:
+        nivelAns = 'Leve'
+    elif 16 < ans < 26:
+        nivelAns = 'Moderada'
+    elif 26 < ans < 64:
+        nivelAns = 'Grave'
+    else :
+        nivelAns = 'El valor no es valido'
+    mensaje = "El nivel de ansiedad del paciente identificado con " + str(id)  + ", cuya edad es: " + str(age) + ", es " + nivelAns
+    return mensaje
+	
+print(ansiedad(12345, 45, 28))
+print(ansiedad(12346, 20, 55))
+print(ansiedad(12347, 50, 25))
+print(ansiedad(12348, 18, 63))
+print(ansiedad(12348, 18, 64))
+print(ansiedad(12348, 18, 80))
