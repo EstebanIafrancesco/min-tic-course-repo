@@ -1,4 +1,4 @@
-def numeroEnteroPositivo(num):
+#def numeroEnteroPositivo(num):
     # if num<0:
     #     return False
     # else:
@@ -7,15 +7,25 @@ def numeroEnteroPositivo(num):
     #     else:
     #         if num%2 == 0:
     #             print('El numero esta entre 0 y 63 y es positivo')
-    if num<0 or num>63:
-        mensaje = 'El valor no es valido'
-    else:
-        mensaje = 'El valor está melo pa analizar'
-    print(mensaje)
+    # if num<0 or num>63:
+    #     mensaje = 'El valor no es valido'
+    # else:
+    #     mensaje = 'El valor está melo pa analizar'
+   # print(mensaje)
        
         
     
     
-numeroEnteroPositivo(56)
+#numeroEnteroPositivo(56)
+
+diccionario = {
+    "uno": True,
+    "dos": False
+}
+
+if (diccionario["uno"]):
+    print('Estoy en true mi pez')
+else:
+    print("Estoy en false jeje")
 
 
