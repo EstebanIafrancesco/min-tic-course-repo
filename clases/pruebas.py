@@ -18,14 +18,29 @@
     
 #numeroEnteroPositivo(56)
 
-diccionario = {
-    "uno": True,
-    "dos": False
+# diccionario = {
+#     "uno": True,
+#     "dos": False
+# }
+
+# if (diccionario["uno"]):
+#     print('Estoy en true mi pez')
+# else:
+#     print("Estoy en false jeje")
+
+
+datos_basicos = {
+    "nombres":"Leonardo Jose",
+    "apellidos":"Caballero Garcia",
+    "cedula":"26938401",
+    "fecha_nacimiento":"03/12/1980",
+    "lugar_nacimiento":"Maracaibo, Zulia, Venezuela",
+    "nacionalidad":"Venezolana",
+    "estado_civil":"Soltero"
 }
 
-if (diccionario["uno"]):
-    print('Estoy en true mi pez')
-else:
-    print("Estoy en false jeje")
-
+clave = datos_basicos.keys()
+print(clave)
+valor = datos_basicos.values()
+print(valor)
 
