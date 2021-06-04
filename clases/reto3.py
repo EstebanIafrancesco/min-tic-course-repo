@@ -17,9 +17,7 @@
 
 
 lista = ['oro','localizacion','internationalizacion','electroencefalograma']
-# By Esteban Iafrancesco
-# 01-06-2021
-# Reto 2 curso de programacion Mision TIC
+
 def palabras(lista)->list:
     nuevaLista = []
     for elemento in lista:
