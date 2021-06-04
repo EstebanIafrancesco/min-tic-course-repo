@@ -17,11 +17,21 @@
 
 
 lista = ['oro','localizacion','internationalizacion','electroencefalograma']
-
+# By Esteban Iafrancesco
+# 01-06-2021
+# Reto 2 curso de programacion Mision TIC
 def palabras(lista)->list:
-    return 'Estoy dentro de la funcion pues mijo...'
-
-
+    nuevaLista = []
+    for elemento in lista:
+        if len(elemento) <= 10:
+            nuevaLista.append(elemento)
+        else:
+            logitudElemento = len(elemento)
+            elementoEntuplado = tuple(elemento)
+            nuevoElemento = elementoEntuplado[0] + str(logitudElemento-2) + str(elementoEntuplado[logitudElemento-1])
+            nuevaLista.append(nuevoElemento)
+    return nuevaLista
+    
 print()
-print(palabras(lista))
+print(palabras(['adrenomieloneuropatía', 'Hipopotomonstrosesquipedaliofobia','murcielago']))
 print()

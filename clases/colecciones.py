@@ -25,11 +25,11 @@ lista1 = list(saludo)
 lista1.append(123)
 # print(lista1)
 entuplada = tuple(lista1)
-# print(entuplada)
+print(entuplada)
 # ---------------------------------------------------------------------------
 
 def cuadrado (el = 0):
     return el*el
 lista = [1,2,3,4,6,81]
 resultado = list(map(cuadrado, lista))
-print(resultado)
+# print(resultado)
