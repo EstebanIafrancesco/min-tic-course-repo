@@ -1,6 +1,6 @@
 # By Esteban Iafrancesco
 # 01-06-2021
-# Reto 2 curso de programacion Mision TIC
+# Reto 3 curso de programacion Mision TIC
 
 # Ee requiere que escriba una función qué reciba cómo parámetro:
 # una lista de palabras y que con la ayuda de ciclos la salida muestre o devuelva las palabras
@@ -16,7 +16,7 @@
 # escribirá como "o17o".
 
 
-lista = ['oro','localizacion','internationalizacion','electroencefalograma']
+lista = ['oro','localizacion','internationalizacion','electroencefalograma','estopuedesercualquierchorrera']
 
 def palabras(lista)->list:
     nuevaLista = []
@@ -31,5 +31,5 @@ def palabras(lista)->list:
     return nuevaLista
     
 print()
-print(palabras(['adrenomieloneuropatía', 'Hipopotomonstrosesquipedaliofobia','murcielago']))
+print(palabras(lista))
 print()
