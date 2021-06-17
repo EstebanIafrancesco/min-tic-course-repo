@@ -14,7 +14,7 @@
 # Esto seria igual a : (f - 32) * 5 / 9 = 100 ºC, si f ==212
 
 # n = [212, 104, 50]
-# n = [50, 176, 104]
+n = [50, 176, 104]
 # n = [104, 320, 50]
 
 def grados_celsius(n) -> str:
