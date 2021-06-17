@@ -11,37 +11,21 @@
 # En caso de que la respuesta tenga varios decimales se debe redondear a un decimal.
 # Ejemplo:
 # Convertir 212 ºF a ºC
-# Esto seria igual a : (212 – 32) * 5 / 9 = 100 ºC
+# Esto seria igual a : (f - 32) * 5 / 9 = 100 ºC, si f ==212
 
-n = [212, 104, 50]
-# n = 'almohabana' 
+# n = [212, 104, 50]
+# n = [50, 176, 104]
+# n = [104, 320, 50]
 
 def grados_celsius(n) -> str:
-    print(n)
-    # implementar lambda
-    # c = lambda f : (f - 32)*5/9
-    # print(c)
-    # hacer un map de lamda
+    try:
+        c = lambda n : round(((n - 32) * 5 / 9),1)
+        celsius = list(map(c, n))
+        return str(n) + ' en grados Farenheit corresponde a ' + str(celsius) + ' en grados Celsius respectivamente'
+    except:
+        return 'Error al convertir los grados, revise los datos de entrada'
     
-    def myFuncion(a):
-        return a + a
-    salida = map(myFuncion, str(n))
-    
-    print(salida)
-    
-    
-    
-    
-    # try:
-    #     acá va la función
-    # except:
-        
-    #     print('Error al convertir los grados, revise los datos de entrada')
-        
-grados_celsius(n)
-    
-    
-
-
-
+print()
+print(grados_celsius(n))
+print()
 
