@@ -15,7 +15,7 @@ def CasosCovid(ruta_archivo_csv: str ) -> dict:
         dataFiltrada = data[['ID de caso', 'Estado']]
         data_salida = dataFiltrada.groupby(['Estado']).count()
     else:
-        return 'Extensión inválida'
+        return 'Extensión inválida mi pez'
     
     data_salida = data_salida.to_dict()
     return data_salida
