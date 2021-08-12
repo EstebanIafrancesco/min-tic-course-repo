@@ -51,3 +51,8 @@ import numpy as np
 #         )
 
 # print(df)
+
+df = pd.read_csv('datosPruebas.csv', names=['Top PO Admin Number'])
+
+print(df)
+
