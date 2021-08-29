@@ -57,7 +57,7 @@ public class Cafe {
             adicion += 1;
         }
 
-        if (this.peso >= 0 && this.peso <= 19) {
+        if (this.peso >= 0 && this.peso < 19) {
             adicion += 10;
         } else if(this.peso > 19 && this.peso < 49 ){
             adicion += 50;
